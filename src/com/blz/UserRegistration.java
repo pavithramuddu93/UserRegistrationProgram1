@@ -8,7 +8,7 @@ public class UserRegistration {
 
     public static void main(String[] args) {
         String firstName = "Pavithra";
-        String lastName = "Pavi";
+        String lastName = "pavi";
         System.out.println(validateFirstName(firstName));
         System.out.println(validateLastName(lastName));
     }
