@@ -9,7 +9,7 @@ public class UserRegistration {
         String lastName = "pavi";
         String email = "abc.xyz@bl.co.in";
         String mNumber = "91 9019122623";
-        String password = "656cac683";
+        String password = "656cAc683";
         System.out.println(validateFirstName(firstName));
         System.out.println(validateLastName(lastName));
         System.out.println(validateEmail(email));
@@ -42,7 +42,7 @@ public class UserRegistration {
     }
 
     private static boolean validatePassword(String password){
-        Pattern pattern = Pattern.compile("^[A-Za-z0-9]{8,}$");
+        Pattern pattern = Pattern.compile("^(?=.*[A-Z])[a-zA-Z0-9]{8,}$");
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
